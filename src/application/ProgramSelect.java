@@ -1,14 +1,13 @@
 package application;
 
 import db.DB;
-import db.DbException;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Program1 {
+public class ProgramSelect {
 
     public static void main(String[] args) {
 
@@ -30,7 +29,7 @@ public class Program1 {
         } finally {
             DB.closeResultSet(rs);
             DB.closeStatement(stm);
-            DB.closeConnection();   
+            DB.closeConnection();
         }
     }
 }
